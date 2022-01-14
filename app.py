@@ -42,8 +42,6 @@ def getdata():
 
             return render_template('Result.html', prediction=my_prediction)
         except ValueError:
-            flash(
-                'Invalid input. Please fill in the form with appropriate values', 'info')
             return "Invalid input. Please fill in the form with appropriate values"
 
 
